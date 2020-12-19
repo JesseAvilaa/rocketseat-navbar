@@ -22,29 +22,12 @@ const Header: React.FC = () => {
     setMenuOpen(!menuOpen)
   }
 
-  const Clickable = styled.div`
-    width: 100%;
-    height: 100%;
-    ::after {
-      content: '';
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(0, 0, 0, 0.8);
-      z-index: 2;
-      display: ${menuOpen ? 'block' : 'none'};
-    }
-  `
   return (
     <>
       <Head>
         <title>Homepage</title>
       </Head>
 
-      <Clickable onClick={() => setMenuOpen(false)} />
       <Div ref={headerRef} isMenuOpen={menuOpen}>
         <Container as="header" isMenuOpen={menuOpen}>
           <div className="logo">
