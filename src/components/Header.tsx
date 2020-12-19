@@ -1,5 +1,4 @@
 import { useRef, useState } from 'react'
-import Head from 'next/head'
 import Link from 'next/link'
 
 import RocketseatLogo from '../assets/rocketseat.svg'
@@ -24,9 +23,6 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <Head>
-        <title>Homepage</title>
-      </Head>
 
       <Div ref={headerRef} isMenuOpen={menuOpen}>
         <Container as="header" isMenuOpen={menuOpen}>
