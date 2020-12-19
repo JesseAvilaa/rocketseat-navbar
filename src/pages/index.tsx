@@ -6,7 +6,7 @@ const Home: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Homepage</title>
+        <title>Rocketseat | Evolua rápido como a tecnologia.</title>
       </Head>
 
       <Header />
